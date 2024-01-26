@@ -8,6 +8,16 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# source any .sh files in /etc/profile.d/
+if [ -d /etc/profile.d ]; then
+ for i in /etc/profile.d/*.sh; do
+ if [ -r $i ]; then
+ . $i
+ fi
+ done
+ unset i
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
