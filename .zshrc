@@ -109,6 +109,9 @@ alias h=helm
 # flux
 command -v flux >/dev/null && . <(flux completion zsh)
 
+# zypper
+alias z=zypper
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
