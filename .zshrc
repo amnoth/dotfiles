@@ -8,6 +8,10 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Golang
+export PATH=$PATH:/home/$USER/go/bin
+
+
 # source any .sh files in /etc/profile.d/
 if [ -d /etc/profile.d ]; then
  for i in /etc/profile.d/*.sh; do
